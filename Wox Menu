@@ -1,0 +1,292 @@
+local G2L = {};
+
+-- StarterGui.Wox menu
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Wox menu]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.Wox menu.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 521, 0, 311);
+G2L["2"]["Position"] = UDim2.new(0.59675, 0, 0.61414, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.Wox menu.Frame.TextLabel
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["RichText"] = true;
+G2L["3"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Wox menu ]];
+G2L["3"]["Position"] = UDim2.new(0.30877, 0, -0.00193, 0);
+
+-- StarterGui.Wox menu.Frame.TextButton
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Fly]];
+G2L["4"]["Position"] = UDim2.new(-0.00228, 0, 0.19013, 0);
+
+-- StarterGui.Wox menu.Frame.TextButton.Fly
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+G2L["5"]["Name"] = [[Fly]];
+
+-- StarterGui.Wox menu.Frame.TextButton
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 0);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Speed]];
+G2L["6"]["Position"] = UDim2.new(-0.00269, 0, 0.53282, 0);
+
+-- StarterGui.Wox menu.Frame.TextButton.Speed
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+G2L["7"]["Name"] = [[Speed]];
+
+-- StarterGui.Wox menu.Frame.TextButton
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[ESP]];
+G2L["8"]["Position"] = UDim2.new(-0.00384, 0, 0.83923, 0);
+
+-- StarterGui.Wox menu.Frame.TextButton.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+-- StarterGui.Wox menu.Frame.TextLabel
+G2L["a"] = Instance.new("TextLabel", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["RichText"] = true;
+G2L["a"]["Size"] = UDim2.new(0, 276, 0, 116);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(171, 86, 0);
+G2L["a"]["Text"] = [[Wox Menu Is On Top Add w.0.x. on discord for more]];
+G2L["a"]["Position"] = UDim2.new(0.47014, 0, -0.37346, 0);
+
+-- StarterGui.Wox menu.TextButton
+G2L["b"] = Instance.new("TextButton", G2L["1"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 90, 0, 24);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Show/Hide]];
+G2L["b"]["Position"] = UDim2.new(0.93034, 0, 0.58313, 0);
+
+-- StarterGui.Wox menu.TextButton.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.Wox menu.Frame.TextButton.Fly
+local function C_5()
+local script = G2L["5"];
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local flyButton = script.Parent -- Assuming the script is a child of the FlyButton
+	local player = game.Players.LocalPlayer
+	
+	local flyEnabled = false
+	local flySpeed = 50 -- Adjust this value to control the flying speed
+	local flying = false
+	local connection
+	
+	-- Function to handle fly movement
+	local function flyMovement()
+		if not flyEnabled or not flying then return end
+	
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+		local camera = workspace.CurrentCamera
+		local moveDirection = Vector3.new()
+	
+		-- Check for WASD input and set the move direction accordingly
+		if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+			moveDirection = moveDirection + (camera.CFrame.LookVector * flySpeed)
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+			moveDirection = moveDirection - (camera.CFrame.LookVector * flySpeed)
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+			moveDirection = moveDirection - (camera.CFrame.RightVector * flySpeed)
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+			moveDirection = moveDirection + (camera.CFrame.RightVector * flySpeed)
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+			moveDirection = moveDirection + (camera.CFrame.UpVector * flySpeed)
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+			moveDirection = moveDirection - (camera.CFrame.UpVector * flySpeed)
+		end
+	
+		-- Apply the move direction to the HumanoidRootPart
+		humanoidRootPart.Velocity = moveDirection
+		humanoidRootPart.AssemblyLinearVelocity = Vector3.new(humanoidRootPart.AssemblyLinearVelocity.X, 0, humanoidRootPart.AssemblyLinearVelocity.Z)
+	end
+	
+	-- Function to toggle fly mode
+	local function toggleFly()
+		flyEnabled = not flyEnabled
+	
+		if flyEnabled then
+			-- Enable fly mode
+			flying = true
+			connection = RunService.RenderStepped:Connect(flyMovement)
+		else
+			-- Disable fly mode
+			flying = false
+			if connection then
+				connection:Disconnect()
+				connection = nil
+			end
+			local character = player.Character or player.CharacterAdded:Wait()
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			humanoidRootPart.Velocity = Vector3.new(0, 0, 0)
+			humanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+		end
+	end
+	
+	-- Connect the flyButton click event to the toggleFly function
+	flyButton.MouseButton1Click:Connect(toggleFly)
+	
+	-- Ensure the fly state persists across character respawns
+	player.CharacterAdded:Connect(function(newCharacter)
+		if flyEnabled then
+			flying = true
+			connection = RunService.RenderStepped:Connect(flyMovement)
+		end
+	end)
+end;
+task.spawn(C_5);
+-- StarterGui.Wox menu.Frame.TextButton.Speed
+local function C_7()
+local script = G2L["7"];
+	-- Define the speed value
+	local speed = 70
+	local speedEnabled = false
+	
+	-- Function to toggle speed on and off
+	local function toggleSpeed()
+		speedEnabled = not speedEnabled
+		if speedEnabled then
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+		else
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16 -- Default speed
+		end
+	end
+	
+	-- Connect toggle function to button click
+	script.Parent.MouseButton1Click:Connect(toggleSpeed)
+	
+	-- Check if player respawns
+	game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
+		if speedEnabled then
+			character.Humanoid.WalkSpeed = speed
+		end
+	end)
+	
+	-- Set initial speed when script runs
+	if speedEnabled then
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+	end
+end;
+task.spawn(C_7);
+-- StarterGui.Wox menu.Frame.TextButton.LocalScript
+local function C_9()
+local script = G2L["9"];
+	local noclipEnabled = false
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	-- Function to set noclip state
+	local function setNoclip(state)
+		noclipEnabled = state
+		if noclipEnabled then
+			-- Disable collisions
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") and part.CanCollide then
+					part.CanCollide = false
+				end
+			end
+		else
+			-- Enable collisions
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") and not part.CanCollide then
+					part.CanCollide = true
+				end
+			end
+		end
+	end
+	
+	-- Function to toggle noclip on and off
+	local function toggleNoclip()
+		noclipEnabled = not noclipEnabled
+		setNoclip(noclipEnabled)
+	end
+	
+	-- Connect toggle function to button click
+	script.Parent.MouseButton1Click:Connect(toggleNoclip)
+	
+	-- Ensure noclip is set correctly when the character respawns
+	player.CharacterAdded:Connect(function(newCharacter)
+		character = newCharacter
+		if noclipEnabled then
+			setNoclip(true)
+		end
+	end)
+	
+	-- Initial setting for character's collisions
+	if noclipEnabled then
+		setNoclip(true)
+	end
+	
+	-- Persist noclip state across respawns
+	game:GetService("RunService").Stepped:Connect(function()
+		if noclipEnabled and character then
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") and part.CanCollide then
+					part.CanCollide = false
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.Wox menu.TextButton.LocalScript
+local function C_c()
+local script = G2L["c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local frame = script.Parent.Parent.Frame
+		frame.Visible = not frame.Visible
+	end)
+	
+end;
+task.spawn(C_c);
+
+return G2L["1"], require;
